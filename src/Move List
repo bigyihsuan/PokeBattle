@@ -2,4 +2,4 @@ MOVE LIST
 ---
 ID | Name | Base Damage | Accuracy | Effects (if any)
 ---
-0 | Tackle | 35 | 0.4
+0 | Tackle | 40 | 1
