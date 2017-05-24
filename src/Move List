@@ -2,4 +2,7 @@ MOVE LIST
 ---
 ID | Name | Base Damage | Accuracy | Effects (if any)
 ---
-0 | Tackle | 35 | 0.4
+0 | Tackle | 40 | 1
+1 | Will-O-Wisp | 0 | 0.85 | Burn
+2 | Toxic | 0 | 0.9 | Poison
+3 | 

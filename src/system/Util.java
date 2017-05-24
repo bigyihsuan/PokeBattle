@@ -1,7 +1,7 @@
 package system;
 
-public abstract class Util {
-	public int doDamage(int hp, float damage) {
+public class Util {
+	public static int doDamage(int hp, float damage) {
 		return hp - (int)damage;
 	}
 	
@@ -20,6 +20,7 @@ public abstract class Util {
 		
 		return stat * (num / den);
 	}
+	
 	
 	
 }
