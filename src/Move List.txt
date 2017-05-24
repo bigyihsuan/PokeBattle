@@ -3,6 +3,9 @@ MOVE LIST
 ID | Name | Base Damage | Accuracy | Effects (if any)
 ---
 0 | Tackle | 40 | 1
+<<<<<<< HEAD
 1 | Will-O-Wisp | 0 | 0.85 | Burn
 2 | Toxic | 0 | 0.9 | Poison
 3 | 
+=======
+>>>>>>> origin/master
