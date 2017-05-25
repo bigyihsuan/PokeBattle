@@ -3,30 +3,28 @@ package system;
 import status.*;
 import field.Creature;
 import system.Util;
+import java.util.*;
 
 public class Move extends Util {
 	private final int id;
 	private final int power;
-	private final float accuracy;
+	private final double accuracy;
 	private Status status = null;
 	private final String name;
 	private boolean isAHit = false;
-	private final int type;
 
-	public Move(int i, String n, int p, float a, int t) { //no status
+	public Move(int i, String n, int p, double a) { //no status
 		id = i;
 		power = p;
 		accuracy = a;
 		name = n;
-		type = t;
 	}
 
-	public Move(int i, String n, int p, float a, int t, int sid) { //with status
+	public Move(int i, String n, int p, double a, int sid) { //with status
 		id = i;
 		power = p;
 		accuracy = a;
 		name = n;
-		type = t;
 
 		switch (sid) {
 		case 0:
@@ -62,7 +60,7 @@ public class Move extends Util {
 		return power;
 	}
 
-	public float getAccuracy() {
+	public double getAccuracy() {
 		return accuracy;
 	}
 
@@ -77,11 +75,15 @@ public class Move extends Util {
 	public boolean isAHit() {
 		return isAHit;
 	}
+}
 
-	public int getType() {
-		return type;
+class MoveList {
+	public static Map<String, Move> moveList = new HashMap<String, Move>();
+	public MoveList() {
+		moveList.put("Tackle", new Move(0, "Tackle", 40, 1));
+		moveList.put("Will-o-Wisp", new Move(1, "Will-o-Wisp", 0, 0.85, 1));
+		moveList.put("Toxic", new Move(2, "Toxic", 0, 0.9, 3));
+		moveList.put("Powder Snow", new Move(3, "Powder Snow", 40, 1, 2));
+		
 	}
-	
-	
-
 }

@@ -1,9 +1,0 @@
-STATUS LIST
----
-ID | Name | Effect
----
-0 | Burn		| -1/16 HP per turn, 1/2 attack.
-1 | Freeze		| Unable to move. 20% chance of thawing.
-2 | Paralysis	| 25% chance to not use a move. 1/2 speed.
-3 | Poison		| -1/16 * [turns had] HP per turn.
-4 | Sleep		| Unable to move. Lasts 1-3 turns.

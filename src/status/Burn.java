@@ -15,7 +15,7 @@ public class Burn extends Status{
 	@Override
 	public void doEffect(Creature target) {
 		int hp = target.getHp();
-		int atk = target.getPhysAtk();
+		int atk = target.getAtk();
 		doDamage(hp, 1/16 * hp);	//deal 1/16 hp when doEffect() called
 		target.setPhysAtk(atk/2);	//halve physical attack
 	}

@@ -1,9 +1,0 @@
-MOVE LIST
----
-ID | Name | Base Damage | Accuracy | Effects (if any) | Phys/Spec/Status
----
-0 | Tackle | 40 | 1 | Phys
-1 | Will-O-Wisp | 0 | 0.85 | Burn | Status
-2 | Toxic | 0 | 0.9 | Poison | Status
-3 | Powder Snow | 40 | 1 | Freeze | Spec
-4 | 

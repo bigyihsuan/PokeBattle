@@ -5,22 +5,18 @@ import status.*;
 
 public class Creature {
 	private int hp;
-	private int physAtk;
-	private int physDef;
-	private int specAtk;
-	private int specDef;
+	private int atk;
+	private int def;
 	private int spd;
 	private int[] moves = new int[4];
 	private Status status = null;
 	private boolean hasStatus = false;
 	private boolean canMove = true;
 	
-	public Creature(int h, int a, int d, int sa, int sd, int sp, int[]ids) {
+	public Creature(int h, int a, int d, int sp, int[]ids) {
 		h = hp;
-		a = physAtk;
-		d = physDef;
-		sa = specAtk;
-		sd = specDef;
+		a = atk;
+		d = def;
 		sp = spd;
 		
 		//move ids
@@ -31,20 +27,12 @@ public class Creature {
 		return hp;
 	}
 	
-	public int getPhysAtk() {
-		return physAtk;
+	public int getAtk() {
+		return atk;
 	}
 	
-	public int getPhysDef() {
-		return physDef;
-	}
-	
-	public int getSpecAtk() {
-		return specAtk;
-	}
-	
-	public int getSpecDef() {
-		return specDef;
+	public int getDef() {
+		return def;
 	}
 	
 	public int getSpd() {
@@ -69,19 +57,11 @@ public class Creature {
 	}
 
 	public void setPhysAtk(int physAtk) {
-		this.physAtk = physAtk;
+		this.atk = physAtk;
 	}
 
 	public void setPhysDef(int physDef) {
-		this.physDef = physDef;
-	}
-
-	public void setSpecAtk(int specAtk) {
-		this.specAtk = specAtk;
-	}
-
-	public void setSpecDef(int specDef) {
-		this.specDef = specDef;
+		this.def = physDef;
 	}
 
 	public void setSpd(int spd) {
